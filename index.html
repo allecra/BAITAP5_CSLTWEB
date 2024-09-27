@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Layout</title>
+    
+    <style> 
+        *{
+           margin:0px;
+           padding:0px; 
+        }
+
+        #wrapper{ /*#wrapper : là định dạng cho selector có id là wrapper.*/
+            width: 800px;/* width : chiều rộng của trang web.*/
+            margin: auto;/* margin : auto để đưa trang web ra giữa trình duyệt.*/
+            color: #FFF;
+        }
+
+        #header{
+            width: 800px;
+            height: 80px; /* height : chiều cao của header*/
+            background-color: #F39; /*background-color : màu nền của header*/
+        }
+
+        #menu{
+            width: 800px;
+            height:50px; /* height : chiều cao của menu*/
+            background-color: #09F;
+        }
+        #left{
+            width: 200px;
+            height: 400px; /* chiều cao của left*/
+            background-color: #9C6;
+            float: left; /*chắc chắn phải có để dồn nội dung phần left qua trái trang web*/
+        }
+        #content{
+            width: 400px;
+            height: 400px;
+            background-color: #6C3;
+            float: left;
+        }
+        #right{
+            width: 200px;
+            height: 400px;
+            background-color: #F96;
+            float: left;
+        }
+        #footer{
+            width: 800px;
+            height: 60px;
+            background-color: #669;
+            clear: both;
+            /*Đây là thuộc tính bắt buộc phải có khi bạn sử dụng thuộc tính float phía trên. Nếu thiếu sẽ không thấy được footer trong layout của bạn.*/
+        }
+    </style>
+
+</head>
+<body>
+    <div id = "wrapper">
+        <div id = "header">Header</div>
+        <div id = "menu">Menu</div>
+        <div id = "left">Left</div>
+        <div id = "content">Content</div>
+        <div id = "right">Right</div>
+        <div id = "footer">Footer</div>
+    </div>
+</body>
+</html>
